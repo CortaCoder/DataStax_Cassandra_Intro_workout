@@ -70,4 +70,4 @@ UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_
 ```
    * ![The Record Got Updated Yay!!](https://your-copied-image-address)
 
-# Once again Thanks DataStax !!!<br /> ## I loved your Session and Learnt a Lot :)
+# Once again Thanks DataStax !!! loved your Session :)

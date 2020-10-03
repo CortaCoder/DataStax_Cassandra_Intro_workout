@@ -17,7 +17,9 @@ CREATE TABLE IF NOT EXISTS student_marks(
    ... PRIMARY KEY ((studentid),student_name));
 ```
 * ![](https://your-copied-image-address)
+
 ### Lets Insert some Data<br />
+I have some data of my classmates which i will be inserting,
 ```
 INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
    ... VALUES (110,'Sam',86.3,75.6);
@@ -30,3 +32,35 @@ INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
 INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
    ... VALUES (117,'Sumanth',98.9,97.6);
 ```
+* ![](https://your-copied-image-address)
+
+### Lets Check the Table<br />
+```
+SELECT * FROM student_marks;
+```
+* ![](https://your-copied-image-address)
+
+### Reading the marks of a particular student
+Here i want to read the marks of "Sharan" from the table.
+So i use the unique partition key named `studentid` to extract the desired row.
+```
+SELECT * FROM student_marks WHERE studentid = 112
+```
+* ![](https://your-copied-image-address)
+
+### Delete a particular Record from Table
+* Before deleting ,i want to insert a data row
+   ```
+   INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+      ... VALUES (110,'Sampath',86.3,75.6);
+   ```
+* Once I read the entire table, i find two rows with the same `studentid` So to delete one of them, i have to make use of the clustering column i.e. `student_name` which is a part of `PRIMARY KEY`
+   ![](https://your-copied-image-address)
+* Deleting the duplicate row
+   ```
+   DELETE FROM student_marks
+      ... WHERE studentid = 110 AND student_name = "Sampath";
+   ```
+   * ![You can see that the record was deleted](https://your-copied-image-address)
+   
+### Update a particular record

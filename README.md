@@ -38,7 +38,7 @@ We have to check whether the data has been inserted or not. Head to the next sec
 ```
 SELECT * FROM student_marks;
 ```
-![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Entire%20Data.JPG)
+![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Entire%20Data.JPG)<br />
    The Insertion was successful !!!<br />
 ## Reading the marks of a particular student
 Here i want to read the marks of "Sharan" from the table.
@@ -46,7 +46,7 @@ So i use the unique partition key named `studentid` to extract the desired row.
 ```
 SELECT * FROM student_marks WHERE studentid = 112
 ```
-![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20a%20record.JPG)
+![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20a%20record.JPG)<br />
    Displaying the record with studentid = 112<br />
 ## Delete a particular Record from Table
 * Before deleting ,i want to insert a data row
@@ -54,20 +54,20 @@ SELECT * FROM student_marks WHERE studentid = 112
    INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
       ... VALUES (110,'Sampath',86.3,75.6);
    ```
-* Once I read the entire table, i find two rows with the same `studentid` So to delete one of them, i have to make use of the clustering column i.e. `student_name` which is a part of `PRIMARY KEY`<br />
-   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Duplicate.JPG)
+* Once I read the entire table, i find two rows with the same `studentid` So to delete one of them, i have to make use of the clustering column i.e. `student_name` which is a part of `PRIMARY KEY`<br /><br />
+   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Duplicate.JPG)<br />
 * Deleting the duplicate row
    ```
    DELETE FROM student_marks
       ... WHERE studentid = 110 AND student_name = "Sampath";
    ```
-   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Deleting.JPG)
+   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Deleting.JPG)<br />
    You can see that the record was deleted.<br />
 ## Update a particular record
 I wish to update the `science_marks` of `studentid = 110`.
 ```
 UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_name = 'Sam' 
 ```
-   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Updated.JPG)
+   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Updated.JPG)<br />
    The Record Got Updated Yay!!!<br />
 # Once again Thanks DataStax !!! loved your Session :)

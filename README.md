@@ -64,3 +64,10 @@ SELECT * FROM student_marks WHERE studentid = 112
    * ![You can see that the record was deleted](https://your-copied-image-address)
    
 ### Update a particular record
+I wish to update the `science_marks` of `studentid = 110`.
+```
+UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_name = 'Sam' 
+```
+   * ![The Record Got Updated Yay!!](https://your-copied-image-address)
+
+# Once again Thanks DataStax !!! I loved your Session and Learnt a Lot :)

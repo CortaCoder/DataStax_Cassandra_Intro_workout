@@ -7,7 +7,7 @@ Thanks A Lot for Giving the Opportunity DataStax!!! :)<br />
 
 Here's What i made
 -------------------------------------------------------------
-#Creating a Table named "student_marks"H6<br />
+#H6Creating a Table named "student_marks"<br />
 CREATE TABLE IF NOT EXISTS student_marks(<br />
   ... studentid int,<br />
   ... student_name text,<br />

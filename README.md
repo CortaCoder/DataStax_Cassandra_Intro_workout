@@ -16,3 +16,17 @@ CREATE TABLE IF NOT EXISTS student_marks(
    ... science_marks decimal,
    ... PRIMARY KEY ((studentid),student_name));
 ```
+* ![](https://your-copied-image-address)
+### Lets Insert some Data<br />
+```
+INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+   ... VALUES (110,'Sam',86.3,75.6);
+INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+   ... VALUES (112,'Sharan',88.5,87.6);
+INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+   ... VALUES (113,'Shravan',92.8,98.6);
+INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+   ... VALUES (114,'SriChakraRaj',93,98.9);
+INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
+   ... VALUES (117,'Sumanth',98.9,97.6);
+```

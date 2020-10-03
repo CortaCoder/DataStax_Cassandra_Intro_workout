@@ -69,6 +69,6 @@ I wish to update the `science_marks` of `studentid = 110`.
 UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_name = 'Sam' 
 ```
    ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Updated.JPG)<br />
-   The Record Got Updated Yay!!!<br />
-##This is What i have learnt from the workshop, I will surely use Cassandra for my future apps.
-# Once again Thanks DataStax !!! loved your Session :)
+   The Record Got Updated Yay!!!<br /><br />
+# Once again Thanks DataStax !!! loved your Session :)<br />
+## Will surely use Cassandra for my future apps

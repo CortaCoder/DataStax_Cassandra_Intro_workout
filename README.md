@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS student_marks(
    ... science_marks decimal,
    ... PRIMARY KEY ((studentid),student_name));
 ```
-* ![](https://your-copied-image-address)
+* ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Create.JPG)
 
 ### Lets Insert some Data<br />
 I have some data of my classmates which i will be inserting,

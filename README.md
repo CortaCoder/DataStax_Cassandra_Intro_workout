@@ -1,5 +1,5 @@
 # DataStax_Cassandra_Intro_workout
-Repository by CortaCoder aka Sri Chakra Raj
+Repository by CortaCoder aka ##### Sri Chakra Raj<br />
 Used Cassandra for the first time, and here is what i made out of it - Student Marks DB<br />
 I have always had the difficulty of searching my marks through the list provided by my Institute<br />
 So i got an idea of using the DataBase provided by Cassandra after attending my first ever DBMS session with DataStax<br />

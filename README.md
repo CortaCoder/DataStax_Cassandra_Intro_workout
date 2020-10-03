@@ -32,13 +32,13 @@ INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
 INSERT INTO student_marks (studentid,student_name,math_marks,science_marks)
    ... VALUES (117,'Sumanth',98.9,97.6);
 ```
-* ![](https://your-copied-image-address)
+We have to check whether the data has been inserted or not. Head to the next section.
 
-### Lets Check the Table<br />
+### Read the Table<br />
 ```
 SELECT * FROM student_marks;
 ```
-* ![](https://your-copied-image-address)
+* ![The Insertion was successful !!!](https://your-copied-image-address)
 
 ### Reading the marks of a particular student
 Here i want to read the marks of "Sharan" from the table.

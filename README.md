@@ -7,7 +7,7 @@ Thanks A Lot for Giving the Opportunity DataStax!!! :)<br />
 
 Here's What I made
 -------------------------------------------------------------
-### Creating a Table named "student_marks"<br />
+### 1.Creating a Table named "student_marks"<br />
 ```
 CREATE TABLE IF NOT EXISTS student_marks(
    ... studentid int,

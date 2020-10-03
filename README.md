@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS student_marks(
    ... science_marks decimal,
    ... PRIMARY KEY ((studentid),student_name));
 ```
-* ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Create.JPG)
+![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Create.JPG)
 
 ### Lets Insert some Data<br />
 I have some data of my classmates which i will be inserting,
@@ -38,7 +38,7 @@ We have to check whether the data has been inserted or not. Head to the next sec
 ```
 SELECT * FROM student_marks;
 ```
-* ![The Insertion was successful !!!](https://your-copied-image-address)
+![The Insertion was successful !!!](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Entire%20Data.JPG)
 
 ### Reading the marks of a particular student
 Here i want to read the marks of "Sharan" from the table.
@@ -46,7 +46,7 @@ So i use the unique partition key named `studentid` to extract the desired row.
 ```
 SELECT * FROM student_marks WHERE studentid = 112
 ```
-* ![](https://your-copied-image-address)
+![Displaying the record with studentid = 112](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20a%20record.JPG)
 
 ### Delete a particular Record from Table
 * Before deleting ,i want to insert a data row
@@ -61,13 +61,13 @@ SELECT * FROM student_marks WHERE studentid = 112
    DELETE FROM student_marks
       ... WHERE studentid = 110 AND student_name = "Sampath";
    ```
-   * ![You can see that the record was deleted](https://your-copied-image-address)
+   ![You can see that the record was deleted](https://your-copied-image-address)
    
 ### Update a particular record
 I wish to update the `science_marks` of `studentid = 110`.
 ```
 UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_name = 'Sam' 
 ```
-   * ![The Record Got Updated Yay!!](https://your-copied-image-address)
+   ![The Record Got Updated Yay!!](https://your-copied-image-address)
 
 # Once again Thanks DataStax !!! loved your Session :)

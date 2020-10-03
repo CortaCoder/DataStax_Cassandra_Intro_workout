@@ -47,7 +47,7 @@ So i use the unique partition key named `studentid` to extract the desired row.
 SELECT * FROM student_marks WHERE studentid = 112
 ```
 ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20a%20record.JPG)<br />
-   Displaying the record with studentid = 112<br />
+   Displaying the record with `studentid = 112`<br />
 ## Delete a particular Record from Table
 * Before deleting ,i want to insert a data row
    ```

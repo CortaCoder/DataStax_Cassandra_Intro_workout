@@ -8,9 +8,11 @@ Thanks A Lot for Giving the Opportunity DataStax!!! :)<br />
 Here's What I made
 -------------------------------------------------------------
 ### Creating a Table named "student_marks"<br />
+```
 CREATE TABLE IF NOT EXISTS student_marks(<br />
    ... studentid int,<br />
    ... student_name text,<br />
    ... math_marks decimal,<br />
    ... science_marks decimal,<br />
    ... PRIMARY KEY ((studentid),student_name));<br />
+```

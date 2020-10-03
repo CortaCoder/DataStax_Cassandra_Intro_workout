@@ -5,9 +5,9 @@ So i got an idea of using the DataBase provided by Cassandra after attending my 
 
 Thanks A Lot for Giving the Opportunity DataStax!!! :)<br />
 
-Here's What i made
+Here's What I made
 -------------------------------------------------------------
-## Creating a Table named "student_marks"<br />
+### Creating a Table named "student_marks"<br />
 CREATE TABLE IF NOT EXISTS student_marks(<br />
   ... studentid int,<br />
   ... student_name text,<br />

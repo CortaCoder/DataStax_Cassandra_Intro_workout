@@ -70,4 +70,5 @@ UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_
 ```
    ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Updated.JPG)<br />
    The Record Got Updated Yay!!!<br />
+##This is What i have learnt from the workshop, I will surely use Cassandra for my future apps.
 # Once again Thanks DataStax !!! loved your Session :)

@@ -4,4 +4,13 @@ I have always had the difficulty of searching my marks through the list provided
 So i got an idea of using the DataBase provided by Cassandra after attending my first ever DBMS session with DataStax
 
 Thanks A Lot for Giving the Opportunity DataStax!!! :)
+
+Here's What i made
 -------------------------------------------------------------
+Creating a Table named "student_marks"
+CREATE TABLE IF NOT EXISTS student_marks(
+  ... studentid int,
+  ... student_name text,
+  ... math_marks decimal,
+  ... science_marks decimal,
+  ... PRIMARY KEY ((studentid),student_name));

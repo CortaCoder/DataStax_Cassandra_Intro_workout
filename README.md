@@ -55,19 +55,19 @@ SELECT * FROM student_marks WHERE studentid = 112
       ... VALUES (110,'Sampath',86.3,75.6);
    ```
 * Once I read the entire table, i find two rows with the same `studentid` So to delete one of them, i have to make use of the clustering column i.e. `student_name` which is a part of `PRIMARY KEY`
-   ![](https://your-copied-image-address)
+   ![](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Read%20Duplicate.JPG)
 * Deleting the duplicate row
    ```
    DELETE FROM student_marks
       ... WHERE studentid = 110 AND student_name = "Sampath";
    ```
-   ![You can see that the record was deleted](https://your-copied-image-address)
+   ![You can see that the record was deleted](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Deleting.JPG)
    
 ### Update a particular record
 I wish to update the `science_marks` of `studentid = 110`.
 ```
 UPDATE student_marks SET science_marks = 85.8 WHERE studentid = 110 AND student_name = 'Sam' 
 ```
-   ![The Record Got Updated Yay!!](https://your-copied-image-address)
+   ![The Record Got Updated Yay!!](https://github.com/CortaCoder/DataStax_Cassandra_Intro_workout/blob/master/Updated.JPG)
 
 # Once again Thanks DataStax !!! loved your Session :)
